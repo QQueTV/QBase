@@ -1,0 +1,235 @@
+/* VERSION: 7 */
+/* global colors */
+.root {
+    -q-accent-color: #60acd7;
+    -q-accent-color-2: #76d760;
+    -q-accent-color-3: #f7b2b2;
+    -q-reject-click-bg: #cd4d4d;
+    -q-reject-click-border: #780202;
+    -q-border-color: black;
+    -q-toggled-border-color: black;
+    -q-text-color: #111111;
+}
+
+/* default QButton */
+.q-button-default {
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px; 
+    -fx-background-radius: 12px; 
+    -fx-background-insets: 2.5px;
+    -fx-background-color: -q-accent-color;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -q-text-color;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-button-default:hover {
+    -fx-background-color: derive(-q-accent-color, 20%);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-button-default:pressed {
+    -fx-background-color: derive(-q-accent-color, -35%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+.q-button-default:toggled {
+    -fx-background-color: derive(-q-accent-color, -30%);
+    -fx-border-color: -q-toggled-border-color;
+    -fx-text-fill: -q-toggled-border-color;
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+}
+.q-button-default:toggled:hover {
+    -fx-background-color: derive(-q-accent-color, -25%);
+    -fx-cursor: hand;
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+}
+.q-button-default:toggled:pressed {
+    -fx-background-color: derive(-q-accent-color, -35%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+
+/* main menu QButton */
+.q-button-main-menu {
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 4px;
+    -fx-border-radius: 9px;
+    -fx-background-radius: 9px;
+    -fx-background-insets: 3.5px;
+    -fx-background-color: -q-accent-color-2;
+    -fx-padding: 15px 30px;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -q-text-color;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-button-main-menu:hover {
+    -fx-background-color: derive(-q-accent-color-2, 20%);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-button-main-menu:pressed {
+    -fx-background-color: derive(-q-accent-color-2, -35%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+.q-button-main-menu:toggled {
+    -fx-background-color: derive(-q-accent-color-2, -30%);
+    -fx-border-color: -q-toggled-border-color;
+    -fx-text-fill: -q-toggled-border-color;
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+}
+.q-button-main-menu:toggled:hover {
+    -fx-background-color: derive(-q-accent-color-2, -25%);
+    -fx-cursor: hand;
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+}
+.q-button-main-menu:toggled:pressed {
+    -fx-background-color: derive(-q-accent-color-2, -35%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+
+/* round QButton */
+.q-button-round {
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 2px;
+    -fx-background-radius: 50em;
+    -fx-border-radius: 50em;
+    -fx-background-insets: 1.5px;
+    -fx-background-color: -q-accent-color-3;
+    -fx-padding: 5px;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -q-text-color;
+    -fx-min-width: 45px;
+    -fx-min-height: 45px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-button-round:hover {
+    -fx-background-color: derive(-q-accent-color-3, 20%);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-button-round:pressed {
+    -fx-background-color: derive(-q-accent-color-3, -35%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+.q-button-round:toggled {
+    -fx-background-color: derive(-q-accent-color-3, -30%);
+    -fx-border-color: -q-toggled-border-color;
+    -fx-text-fill: -q-toggled-border-color;
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+}
+.q-button-round:toggled:hover {
+    -fx-background-color: derive(-q-accent-color-3, -25%);
+    -fx-cursor: hand;
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+}
+.q-button-round:toggled:pressed {
+    -fx-background-color: derive(-q-accent-color-3, -35%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+
+/* default QDropDownMenu */
+.q-dropdown-menu-default {
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-background-insets: 2.5px;
+    -fx-background-color: -q-accent-color;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-dropdown-menu-default:hover {
+    -fx-background-color: derive(-q-accent-color, 20%);
+    -fx-cursor: hand;
+}
+.q-dropdown-menu-default:pressed {
+    -fx-background-color: derive(-q-accent-color, -30%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+.q-dropdown-menu-default:showing {
+    -fx-background-color: derive(-q-accent-color, -30%);
+    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+}
+.q-dropdown-menu-default:showing:hover {
+    -fx-background-color: derive(-q-accent-color, -25%);
+    -fx-cursor: hand;
+}
+.q-dropdown-menu-default > .list-cell {
+    -fx-padding: 5px 10px;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -q-text-color;
+    -fx-background-color: transparent;
+}
+.q-dropdown-menu-default > .arrow-button {
+    -fx-background-color: transparent;
+    -fx-paddinng: 0px 15px 0px 0px;
+}
+.q-dropdown-menu-default > .arrow-button > .arrow {
+    -fx-background-color: -q-text-color;
+    -fx-font-size: 20px;
+}
+.q-dropdown-menu-default .list-view {
+    -fx-background-color: -q-accent-color;
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 3px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 8px;
+    -fx-background-insets: 2.5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
+}
+.q-dropdown-menu-default .list-view .list-cell {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -q-text-color;
+    -fx-padding: 5px 10px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+}
+.q-dropdown-menu-default .list-view .list-cell:filled:hover {
+    -fx-background-color: derive(-q-accent-color, 20%);
+    -fx-cursor: hand;
+}
+.q-dropdown-menu-default .list-view .list-cell:filled:selected {
+    -fx-background-color: derive(-q-accent-color, -30%);
+    -fx-text-fill: -q-toggled-border-color;
+}
+.q-dropdown-menu-default .list-view .list-cell:filled:selected:hover {
+    -fx-background-color: derive(-q-accent-color, -25%);
+    -fx-cursor: hand;
+}
+
+/* default QScrollBar (not a java object) */
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 3px;
+}
+.scroll-bar .track {
+    -fx-background-color: derive(-q-accent-color, 15%);
+    -fx-background-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+.scroll-bar .thumb {
+    -fx-background-color: derive(-q-border-color, 20%);
+    -fx-background-radius: 8px;
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 2px; 
+    -fx-border-radius: 8px;
+    -fx-pref-width: 5px;
+}
+.scroll-bar .thumb:hover {
+    -fx-cursor: hand;
+    -fx-background-color: derive(-q-border-color, 40%);
+}
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0px;
+}
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0px;
+}
