@@ -14,7 +14,7 @@
 /* default QButton */
 .q-button-default {
     -fx-border-color: -q-border-color;
-    -fx-border-width: 3px;
+    -fx-border-width: 10px;
     -fx-border-radius: 12px; 
     -fx-background-radius: 12px; 
     -fx-background-insets: 2.5px;
