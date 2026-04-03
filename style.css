@@ -2,12 +2,12 @@
 .root {
     -q-accent-color: #60acd7;
     -q-accent-color-2: #76d760;
-    -q-accent-color-3: #f7b2b2;
+    -q-accent-color-3: #fb9494;
     -q-reject-click-bg: #cd4d4d;
     -q-reject-click-border: #780202;
-    -q-border-color: black;
+    -q-border-color: #222222;
     -q-toggled-border-color: black;
-    -q-text-color: #111111;
+    -q-text-color: #222222;
     -q-toolbar-text-color: #DDDDDD;
     -q-window-color: #d5d0c3;
     -q-toolbar-color: rgb(57, 24, 0);
@@ -26,10 +26,10 @@
 /* default QButton */
 .q-button-default {
     -fx-border-color: -q-border-color;
-    -fx-border-width: 3px;
+    -fx-border-width: 1px;
     -fx-border-radius: 12px; 
     -fx-background-radius: 12px; 
-    -fx-background-insets: 2.5px;
+    -fx-background-insets: 0.5px;
     -fx-background-color: -q-accent-color;
     -fx-padding: 5px 10px;
     -fx-font-size: 18px;
@@ -65,10 +65,10 @@
 /* main menu QButton */
 .q-button-main-menu {
     -fx-border-color: -q-border-color;
-    -fx-border-width: 4px;
+    -fx-border-width: 2px;
     -fx-border-radius: 9px;
     -fx-background-radius: 9px;
-    -fx-background-insets: 3.5px;
+    -fx-background-insets: 1.5px;
     -fx-background-color: -q-accent-color-2;
     -fx-padding: 15px 30px;
     -fx-font-size: 28px;
@@ -104,10 +104,10 @@
 /* round QButton */
 .q-button-round {
     -fx-border-color: -q-border-color;
-    -fx-border-width: 2px;
+    -fx-border-width: 1px;
     -fx-background-radius: 50em;
     -fx-border-radius: 50em;
-    -fx-background-insets: 1.5px;
+    -fx-background-insets: 0.5px;
     -fx-background-color: -q-accent-color-3;
     -fx-padding: 0px;
     -fx-font-size: 24px;
@@ -145,10 +145,10 @@
 /* default QDropDownMenu */
 .q-dropdown-menu-default {
     -fx-border-color: -q-border-color;
-    -fx-border-width: 3px;
+    -fx-border-width: 1px;
     -fx-border-radius: 12px;
     -fx-background-radius: 12px;
-    -fx-background-insets: 2.5px;
+    -fx-background-insets: 0.5px;
     -fx-background-color: -q-accent-color;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
 }
@@ -186,10 +186,10 @@
 .q-dropdown-menu-default .list-view {
     -fx-background-color: -q-accent-color;
     -fx-border-color: -q-border-color;
-    -fx-border-width: 3px;
+    -fx-border-width: 0px;
     -fx-border-radius: 12px;
     -fx-background-radius: 8px;
-    -fx-background-insets: 2.5px;
+    -fx-background-insets: 0.5px;
     -fx-padding: 5px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 5);
 }
@@ -222,14 +222,15 @@
 .scroll-bar .track {
     -fx-background-color: derive(-q-accent-color, 15%);
     -fx-background-radius: 8px;
-    -fx-border-width: 2px;
+    -fx-border-width: 1px;
     -fx-border-radius: 8px;
 }
 .scroll-bar .thumb {
     -fx-background-color: derive(-q-border-color, 20%);
     -fx-background-radius: 8px;
+    -fx-background-insets: 0.5px;
     -fx-border-color: -q-border-color;
-    -fx-border-width: 2px; 
+    -fx-border-width: 1px; 
     -fx-border-radius: 8px;
     -fx-pref-width: 5px;
 }
@@ -249,9 +250,9 @@
 .q-toolbar {
     -fx-background-color: derive(-q-accent-color, -20%);
     -fx-background-radius: 16px 16px 0 0;
-    -fx-padding: 10px 10px 10px 10px;
+    -fx-padding: 10px 10px 10px 20px;
     -fx-border-color: -q-border-color;
-    -fx-border-width: 0 0 3px 0;
+    -fx-border-width: 0 0 1px 0;
 }
 .q-toolbar-title {
     -fx-text-fill: -q-toolbar-text-color;
