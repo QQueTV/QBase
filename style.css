@@ -21,7 +21,7 @@
     -fx-background-insets: 2px;
     -fx-border-color: -q-border-color;
     -fx-border-width: 3px;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0, 1), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 
 /* default QButton */
@@ -45,22 +45,22 @@
 }
 .q-button-default:pressed {
     -fx-background-color: derive(-q-accent-color, -35%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 .q-button-default:toggled {
     -fx-background-color: derive(-q-accent-color, -30%);
     -fx-border-color: -q-toggled-border-color;
     -fx-text-fill: -q-toggled-border-color;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, -1);
 }
 .q-button-default:toggled:hover {
     -fx-background-color: derive(-q-accent-color, -25%);
     -fx-cursor: hand;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, -1);
 }
 .q-button-default:toggled:pressed {
     -fx-background-color: derive(-q-accent-color, -35%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 
 /* main menu QButton */
@@ -84,22 +84,22 @@
 }
 .q-button-main-menu:pressed {
     -fx-background-color: derive(-q-accent-color-2, -35%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 .q-button-main-menu:toggled {
     -fx-background-color: derive(-q-accent-color-2, -30%);
     -fx-border-color: -q-toggled-border-color;
     -fx-text-fill: -q-toggled-border-color;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, -1);
 }
 .q-button-main-menu:toggled:hover {
     -fx-background-color: derive(-q-accent-color-2, -25%);
     -fx-cursor: hand;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, -1);
 }
 .q-button-main-menu:toggled:pressed {
     -fx-background-color: derive(-q-accent-color-2, -35%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 
 /* round QButton */
@@ -125,22 +125,54 @@
 }
 .q-button-round:pressed {
     -fx-background-color: derive(-q-accent-color-3, -35%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 .q-button-round:toggled {
     -fx-background-color: derive(-q-accent-color-3, -30%);
     -fx-border-color: -q-toggled-border-color;
     -fx-text-fill: -q-toggled-border-color;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, -1);
 }
 .q-button-round:toggled:hover {
     -fx-background-color: derive(-q-accent-color-3, -25%);
     -fx-cursor: hand;
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 15, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 15, 0, 0, -1);
 }
 .q-button-round:toggled:pressed {
     -fx-background-color: derive(-q-accent-color-3, -35%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
+}
+
+/* toolbar QButton */
+.q-button-toolbar {
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 16px;
+    -fx-text-fill: -q-text-color;
+}
+.q-button-toolbar:hover {
+    -fx-background-color: derive(-q-window-color, -10%);
+    -fx-cursor: hand;
+}
+.q-button-toolbar:pressed {
+    -fx-background-color: derive(-q-window-color, -20%);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, -1);
+}
+.q-button-toolbar:toggled {
+    -fx-background-color: derive(-q-window-color, -15%);
+    -fx-text-fill: -q-toggled-border-color;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, -1);
+}
+.q-button-toolbar:toggled:hover {
+    -fx-background-color: derive(-q-window-color, -20%);
+    -fx-cursor: hand;
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, -1);
+}
+.q-button-toolbar:toggled:pressed {
+    -fx-background-color: derive(-q-window-color, -30%);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, -1);
 }
 
 /* default QDropDownMenu */
@@ -159,11 +191,11 @@
 }
 .q-dropdown-menu-default:pressed {
     -fx-background-color: derive(-q-accent-color, -30%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 .q-dropdown-menu-default:showing {
     -fx-background-color: derive(-q-accent-color, -30%);
-    -fx-effect: innershadow(three-pass-box, rgb(0, 0, 0), 20, 0, 0, -1);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.5), 20, 0, 0, -1);
 }
 .q-dropdown-menu-default:showing:hover {
     -fx-background-color: derive(-q-accent-color, -25%);
@@ -248,6 +280,7 @@
     -fx-pref-height: 0px;
 }
 
+/* QToolBar (inner class of QWindow) */
 .q-toolbar {
     -fx-background-color: derive(-q-accent-color, -20%);
     -fx-background-radius: 16px 16px 0 0;
@@ -260,4 +293,15 @@
     -fx-font-weight: bold;
     -fx-font-size: 32px;
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 1), 5, 0, 0, 2);
+}
+.q-toolbar-button-box {
+    -fx-background-color: -q-window-color;
+    -fx-border-color: -q-border-color;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-background-insets: 0.5px;
+    -fx-padding: 2px 4px 2px 4px;
+    -fx-spacing: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0, 0, 2);
 }
