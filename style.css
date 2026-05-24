@@ -210,7 +210,7 @@
 }
 .q-dropdown-menu-default > .arrow-button {
     -fx-background-color: transparent;
-    -fx-paddinng: 0px 15px 0px 0px;
+    -fx-padding: 0px 15px 0px 0px;
 }
 .q-dropdown-menu-default > .arrow-button > .arrow {
     -fx-background-color: -q-text-color;
